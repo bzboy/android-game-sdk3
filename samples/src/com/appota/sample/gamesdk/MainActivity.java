@@ -35,7 +35,8 @@ public class MainActivity extends Activity {
         registerReceiver(receiver, filter);
         //init sdk
         sdk = AppotaGameSDK.getInstance().init(this, "http://developer.appota.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
-
+        //auto login or not
+        sdk.setAutoLogin(false);
         //optional
         sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
 
@@ -43,10 +44,10 @@ public class MainActivity extends Activity {
         sdk.setShowUserFunctionButtons(false);
         //we use 2 way to login facebook: native and web
         //sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_NATIVE);
-        sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_WEB);
+        //sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_WEB);
         //if login type is web, you have to set clientId and clientSecret (clientId, clientSecret get from http://developer.appota.com)
-        sdk.setClientKey("8d638e1421080c68d9dfb9bc89c56adf0525e6957");
-        sdk.setClientSecret("90b830d7b5fe5b771baf4e2e41fb0b9d0525e6957");
+        //sdk.setClientKey("8d638e1421080c68d9dfb9bc89c56adf0525e6957");
+        //sdk.setClientSecret("90b830d7b5fe5b771baf4e2e41fb0b9d0525e6957");
     }
 
     //if not use AppotaSDKButton, call makePayment() in an event. for example, on button click
@@ -57,10 +58,12 @@ public class MainActivity extends Activity {
 
     public void showUserInfo(View v){
         sdk.showUserInfo();
+        sdk.setUseSDKButton(true);
     }
 
     public void switchAccount(View v){
         sdk.switchAccount();
+        sdk.setUseSDKButton(false);
     }
 
     public void logout(View v){
@@ -73,7 +76,7 @@ public class MainActivity extends Activity {
         @Override
         public void onLoginSuccess(AppotaSession user) {
             //do verify login with your server now
-            //Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.getUsername(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.username + ", AccessToken= " + user.accessToken, Toast.LENGTH_SHORT).show();
         }
 
         @Override

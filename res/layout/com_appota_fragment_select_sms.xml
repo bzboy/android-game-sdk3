@@ -4,14 +4,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/com_appota_bg_payment">
 
-    <ImageView
-        android:id="@+id/com_appota_loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/com_appota_ic_loading"
-        android:visibility="visible" />
-
     <RelativeLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -69,6 +61,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
+            android:visibility="invisible"
             android:id="@+id/com_appota_btn_refresh"/>
 
         </RelativeLayout>
@@ -80,13 +73,10 @@
         android:layout_below="@+id/com_appota_layout_top"/>
 
     <ListView
-        android:id="@+id/com_appota_list_sms_amount"
+        android:id="@+id/com_appota_list_sms_type"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/com_appota_layout_top"
-        android:layout_marginTop="10dp"
-        android:divider="@null"
-        android:dividerHeight="5dp"
-        android:visibility="gone" />
+        android:cacheColorHint="@android:color/transparent"/>
 
 </RelativeLayout>

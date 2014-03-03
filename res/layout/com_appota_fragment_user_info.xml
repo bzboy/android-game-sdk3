@@ -61,7 +61,8 @@
             <com.appota.gamesdk.widget.AppotaTextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:text="@string/com_appota_question_change_pass"
+                android:id="@+id/com_appota_text_change_pass"
+				android:text="@string/com_appota_question_change_pass"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:textColor="@android:color/black"

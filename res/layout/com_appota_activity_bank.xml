@@ -8,7 +8,6 @@
     <RelativeLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_alignParentTop="true"
         android:id="@+id/com_appota_layout_top"
         android:background="@android:color/white">
 
@@ -35,14 +34,14 @@
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:paddingTop="5dp"
-                android:text="@string/com_appota_pay_via"
+                android:id="@+id/com_appota_text_pay_via"
                 android:textColor="@color/com_appota_gray"/>
 
             <com.appota.gamesdk.widget.AppotaTextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/com_appota_pay_via_bank"
+                android:id="@+id/com_appota_text_pay_via_bank"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />

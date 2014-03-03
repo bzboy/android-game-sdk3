@@ -91,6 +91,7 @@
     <string name="com_appota_payment_method_bank">Ngân hàng</string>
     <string name="com_appota_payment_method_paypal">PayPal</string>
     <string name="com_appota_payment_method_gp">Google Play</string>
+    <string name="com_appota_payment_method_ewallet">Ví điện tử</string>
     <string name="com_appota_payment_method_mol">MOL</string>
     <string name="com_appota_payment_method_baokim">Bao kim</string>
     <string name="com_appota_payment_method_unipin">UniPin</string>
@@ -101,6 +102,9 @@
     <string name="com_appota_pay_via_bank">Ngân hàng</string>
     <string name="com_appota_pay_via_paypal">PayPal</string>
     <string name="com_appota_pay_via_gp">Google Play</string>
+    <string name="com_appota_pay_via_ewallet">Ví điện tử</string>
+    <string name="com_appota_pay_via_nl">Ngân lượng</string>
+    <string name="com_appota_pay_via_bk">Bảo kim</string>
     <string name="com_appota_card_info_format">Thẻ %1$d %2$s -> %3$d</string>
     <string name="com_appota_bank_amount_format">%1$d %2$s</string>
     <string name="com_appota_paypal_amount_format">%1$s %2$s</string>

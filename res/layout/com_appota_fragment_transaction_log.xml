@@ -17,7 +17,6 @@
         android:layout_centerInParent="true"
         android:id="@+id/com_appota_btn_retry"
         android:background="@drawable/com_appota_btn_green_click"
-        android:text="@string/com_appota_retry"
         android:visibility="gone"/>
 
     <com.appota.gamesdk.widget.AppotaTextView
@@ -25,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:id="@+id/com_appota_text_empty"
-        android:text="@string/com_appota_no_transaction"
         android:textColor="@color/com_appota_gray"
         android:textSize="16sp"
         android:visibility="gone"/>

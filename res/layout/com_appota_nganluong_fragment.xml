@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/com_appota_bg_payment" >
+
+    <RelativeLayout
+        android:id="@+id/com_appota_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white" >
+
+        <ImageButton
+            android:id="@+id/com_appota_btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/com_appota_button_click"
+            android:src="@drawable/com_appota_ic_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/com_appota_btn_refresh"
+            android:layout_toRightOf="@+id/com_appota_btn_back"
+            android:orientation="vertical" >
+
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:id="@+id/com_appota_text_pay_via"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:textColor="@color/com_appota_gray" />
+
+            <com.appota.gamesdk.widget.AppotaTextView
+                android:id="@+id/com_appota_text_pay_via_ewallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/com_appota_btn_refresh"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/com_appota_button_click"
+            android:src="@drawable/com_appota_ic_refresh"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/com_appota_layout_top"
+        android:background="@drawable/com_appota_dark_line" />
+
+    <ListView
+        android:id="@+id/com_appota_list_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/com_appota_layout_top"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:clipToPadding="false"
+        android:dividerHeight="5dp"/>
+
+</RelativeLayout>

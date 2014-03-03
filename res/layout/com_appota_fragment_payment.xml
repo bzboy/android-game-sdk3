@@ -67,7 +67,7 @@
         android:layout_height="36dp"
         android:layout_width="match_parent"
         android:background="@drawable/com_appota_bg_payment_method"
-        android:text="@string/com_appota_choose_payment_method"
+        android:id="@+id/com_appota_text_choose_payment"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
         android:textAllCaps="true"

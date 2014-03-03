@@ -34,9 +34,8 @@ public class MainActivity extends Activity {
         filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
         registerReceiver(receiver, filter);
         //init sdk
-        sdk = AppotaGameSDK.getInstance().init(this, "http://developer.appota.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
-        //auto login or not
-        sdk.setAutoLogin(false);
+        AppotaGameSDK.getInstance().setAutoLogin(false);
+        sdk = AppotaGameSDK.getInstance().init(this, "http://pay.thienha.mobi/YNGameSDK/Android.html", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
         //optional
         sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
 
@@ -48,6 +47,10 @@ public class MainActivity extends Activity {
         //if login type is web, you have to set clientId and clientSecret (clientId, clientSecret get from http://developer.appota.com)
         //sdk.setClientKey("8d638e1421080c68d9dfb9bc89c56adf0525e6957");
         //sdk.setClientSecret("90b830d7b5fe5b771baf4e2e41fb0b9d0525e6957");
+    }
+    
+    public void manualLogin(View v){
+    	sdk.manualLogin();
     }
 
     //if not use AppotaSDKButton, call makePayment() in an event. for example, on button click
@@ -92,15 +95,15 @@ public class MainActivity extends Activity {
         //payment success callback
         @Override
         public void onPaymentSuccess(TransactionResult paymentResult) {
-
+        	Toast.makeText(MainActivity.this, "Just for login testing. Username = " + paymentResult.amount + ", AccessToken= " + paymentResult.target, Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();
         sdk.finish();
         unregisterReceiver(receiver);
+        super.onDestroy();
     }
 
 }

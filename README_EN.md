@@ -79,10 +79,14 @@ Download Appota Game SDK for Android and import into IDE.
 - To login with Facebook Account, add following configuration:
  
 ``` xml
-    <activity android:name="com.facebook.LoginActivity"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar"
-        android:label="@string/app_name" />
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
+```
+
+- To login with Twitter Account, add following configuration:
+
+``` xml
+    <meta-data android:name="com.appota.gamesdk.twitter.consumer.key" android:value="YOUR_CONSUMER_KEY" />
+    <meta-data android:name="com.appota.gamesdk.twitter.consumer.secret" android:value="YOUR_SECRET_KEY" />
 ```
 
 **3. Integrate SDK**

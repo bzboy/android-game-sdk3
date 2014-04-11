@@ -44,58 +44,23 @@ Download Appota Game SDK for Android and import into IDE.
     <uses-permission android:name="com.android.vending.BILLING" />
 ```
 
-- To use SMS payment interface, add following activity configuration:
+- To use payment interface, add following activity configuration:
 
 ``` xml
-    <activity android:name="com.appota.gamesdk.SMSPaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
-```
-
-- To use Card payment interface, add following activity configuration:
-
-``` xml
-    <activity android:name="com.appota.gamesdk.CardPaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
-```
-
-- To use Internet Banking payment interface, add following acticity
-configuration:
-
-``` xml
-    <activity android:name="com.appota.gamesdk.BankPaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
-```
-
-- To use Paypal payment interface, add following activity configuration:
-
-``` xml
-    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <service android:name="com.paypal.android.sdk.payments.PayPalService" 
-    android:exported="false" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
-```
-
-- To use Google Play payment interface, add following activity configuration:
-
-``` xml
-    <activity android:name="com.appota.gamesdk.GooglePaymentActivity" 
-    android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+            android:name="com.appota.gamesdk.UserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Appota.GameSDK"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.appota.gamesdk.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Appota.GameSDK"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.appota.gamesdk.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Appota.GameSDK" />
 ```
 
 - To turn off or on Sandbox mode, add following configuration:

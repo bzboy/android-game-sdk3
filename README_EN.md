@@ -150,15 +150,14 @@ To init SDK, place this code block in onCreate() method of activity:
     registerReceiver(receiver, filter);
     
     // Init SDK
-    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
-        String configUrl, boolean isUseSDKButton, String noticeUrl, 
-        String apiKey, String sandboxApiKey);
+    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(context, configUrl, isUseSDKButton, noticeUrl, apiKey, sandboxApiKey);
 ```
 
-- configUrl: Link to JSON config file.
-- isUseSDKButton: On/off default sdk buttton
-- noticeUrl: Called when a transaction is finished, if you have already config IPN on developer site, just pass ""
-- apiKey/sandboxApiKey: Provided by Appota for your application.
+- Context context: Application's context.
+- String configUrl: Link to JSON config file.
+- boolean isUseSDKButton: On/off default sdk buttton
+- String noticeUrl: Called when a transaction is finished, if you have already config IPN on developer site, just pass ""
+- String apiKey/sandboxApiKey: Provided by Appota for your application.
 
 In the case you don't use default SDK button (isUseSDKButton = false), you can create your custom buttons to
 call separate UI:

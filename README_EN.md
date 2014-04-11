@@ -138,7 +138,7 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
         @Override
         public void onLoginSuccess(AppotaSession user) {
             //do verify login with your server now
-            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, user.username, Toast.LENGTH_SHORT).show();
         }
 
         @Override
@@ -151,6 +151,12 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
         public void onPaymentSuccess(TransactionResult paymentResult) {
 
         }
+        
+        @Override
+		public void onSwitchAccountSuccess(AppotaSession arg0) {
+			// TODO Auto-generated method stub
+			
+		}
     } 
 ``` 
 

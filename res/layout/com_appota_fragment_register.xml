@@ -7,7 +7,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
         <com.appota.gamesdk.widget.AppotaEditText
             android:id="@+id/com_appota_edit_username"
@@ -42,6 +43,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
+            android:paddingRight="80dp"
             android:background="@drawable/com_appota_bg_edit_text"
             android:paddingLeft="10dp"
             android:textColor="@android:color/black"
@@ -73,7 +75,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/com_appota_btn_blue_click"
-            android:textColor="@android:color/white"
+            android:textColor="@color/com_appota_white"
             android:layout_marginBottom="10dp"/>
 
     </LinearLayout>

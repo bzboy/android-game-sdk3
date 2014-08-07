@@ -9,7 +9,24 @@
         android:layout_width="wrap_content"
         android:text="Make Payment"
         android:onClick="makePayment"
+        android:id="@+id/btn_payment"
         android:layout_alignParentTop="true"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show SMS Payment"
+        android:onClick="showSMSPayment"
+        android:id="@+id/btn_sms"
+        android:layout_below="@+id/btn_payment"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show Card Payment"
+        android:onClick="showCardPayment"
+        android:layout_below="@+id/btn_payment"
+        android:layout_toRightOf="@+id/btn_sms"/>
 
     <Button
         android:layout_height="wrap_content"
@@ -17,13 +34,62 @@
         android:text="Show User"
         android:onClick="showUserInfo"
         android:layout_alignParentRight="true"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Login"
+        android:onClick="manualLogin"
+        android:id="@+id/login"
+        android:layout_centerInParent="true"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="LoginFacebook"
+        android:onClick="loginFacebook"
+        android:layout_toLeftOf="@+id/login"
+        android:layout_centerVertical="true"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="LoginGoogle"
+        android:onClick="loginGoogle"
+        android:layout_toRightOf="@+id/login"
+        android:layout_centerVertical="true"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Register"
+        android:onClick="register"
+        android:layout_below="@+id/login"
+        android:layout_centerInParent="true"/>
 
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="Switch Account"
         android:onClick="switchAccount"
+        android:id="@+id/btn_logout"
         android:layout_alignParentBottom="true"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show Bank Payment"
+        android:onClick="showBankPayment"
+        android:id="@+id/btn_bank"
+        android:layout_above="@+id/btn_logout"/>
+    
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Show Google Payment"
+        android:onClick="showGPPayment"
+        android:layout_above="@+id/btn_logout"
+        android:layout_toRightOf="@+id/btn_bank"/>
 
     <Button
         android:layout_height="wrap_content"

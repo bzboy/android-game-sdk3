@@ -46,7 +46,7 @@ public class MainActivity extends FragmentActivity {
         //init sdk
         AppotaGameSDK.getInstance().setAutoLogin(false);
         sdk = AppotaGameSDK.getInstance();
-        sdk.init(this, "http://123.30.215.242/Game/Config/Config_plat.txt", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
+        sdk.init(this, "https://developer.appota.com/config.php", true, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
         //optional
         sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
 

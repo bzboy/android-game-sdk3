@@ -1,8 +1,6 @@
 
 package com.appota.sample.gamesdk;
 
-import java.util.List;
-
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -13,12 +11,8 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.appota.gamesdk.commons.AppotaAction;
-import com.appota.gamesdk.commons.SDKUtil;
-import com.appota.gamesdk.commons.Util;
 import com.appota.gamesdk.core.AppotaGameSDK;
-import com.appota.gamesdk.core.AppotaGameSDKConfig.PaymentMethod;
 import com.appota.gamesdk.core.AppotaReceiver;
-import com.appota.gamesdk.core.AppotaUser;
 import com.appota.gamesdk.model.AppotaSession;
 import com.appota.gamesdk.model.TransactionResult;
 import com.facebook.Session;

@@ -3,4 +3,8 @@
     <declare-styleable name="AppotaTextView">
         <attr name="typeface" format="string"/>
     </declare-styleable>
+    <declare-styleable name="MaskedEditText">
+		<attr name="mask" format="string" />
+		<attr name="char_representation" format="string" />
+	</declare-styleable>
 </resources>

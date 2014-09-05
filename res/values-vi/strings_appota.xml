@@ -99,6 +99,7 @@
     <string name="com_appota_pay_via_sms">Thanh toán qua SMS</string>
     <string name="com_appota_pay_via">Thanh toán qua</string>
     <string name="com_appota_pay_via_card">Thẻ cào</string>
+    <string name="com_appota_pay_via_unipin">UniPin Express</string>
     <string name="com_appota_pay_via_bank">Ngân hàng</string>
     <string name="com_appota_pay_via_paypal">PayPal</string>
     <string name="com_appota_pay_via_gp">Google Play</string>

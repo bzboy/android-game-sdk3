@@ -99,6 +99,7 @@
     <string name="com_appota_pay_via_sms">Pay via SMS</string>
     <string name="com_appota_pay_via">Pay via</string>
     <string name="com_appota_pay_via_card">Phone card</string>
+    <string name="com_appota_pay_via_unipin">UniPin Express</string>
     <string name="com_appota_pay_via_bank">Internet banking</string>
     <string name="com_appota_pay_via_paypal">PayPal</string>
     <string name="com_appota_pay_via_gp">Google Play</string>

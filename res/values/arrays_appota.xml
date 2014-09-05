@@ -14,6 +14,11 @@
         <item>@string/com_appota_lang_vn</item>
     </array>
     
+    <array name="com_appota_lang_id">
+        <item>@string/com_appota_lang_en</item>
+        <item>@string/com_appota_lang_id</item>
+    </array>
+    
     <array name="com_appota_banks">
         <item>@string/com_appota_select_bank</item>
         <item>Techcombank</item>

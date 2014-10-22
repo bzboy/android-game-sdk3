@@ -96,7 +96,7 @@ Download Appota Game SDK cho Android và import vào IDE.
 - Để sử dụng tài khoản Facebook để đăng nhập, thêm cấu hình permission sau:
 
 ``` xml
-    <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    <activity android:name="com.appota.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
     android:label="@string/app_name" />
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
 ```

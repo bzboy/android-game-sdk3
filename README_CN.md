@@ -99,7 +99,7 @@ Android Appota Game SDK 是给你应用集成Appota 用户和支付系统的最�
 -添加以下permission 配置以便使用Facebook账户登录：
 
 ``` xml
-    <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    <activity android:name="com.appota.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
     android:label="@string/app_name" />
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
 ```

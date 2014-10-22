@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../AppotaGameSDK/AppotaGameSDK.iml" filepath="$PROJECT_DIR$/../AppotaGameSDK/AppotaGameSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/AppotaGameSDKSample.iml" filepath="$PROJECT_DIR$/AppotaGameSDKSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Android-ultimate-library/facebook-android-sdk-3.5.2/facebook/facebook.iml" filepath="$PROJECT_DIR$/../../Android-ultimate-library/facebook-android-sdk-3.5.2/facebook/facebook.iml" />
     </modules>
   </component>
 </project>

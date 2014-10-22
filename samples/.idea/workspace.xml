@@ -22,6 +22,9 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1bd32270-ddf9-46df-ba57-4b48c0678a2c" name="Default" comment="" />
     <ignored path="AppotaGameSDKSample.iws" />
@@ -92,32 +95,73 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$USER_HOME$/Dropbox/keystores/apple_alias_vlthenhi.keystore" />
+    <option name="KEY_ALIAS" value="vlthenhi" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/values-vi/strings_appota.xml" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/LoginFragment.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaGameSDK.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Constants.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Util.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaUser.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaNetworkHelper.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/drawable/com_appota_bg_main_layout.xml" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/values-v11/styles_appota.xml" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/values/styles_appota.xml" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_main_layout.xml" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/SMSPaymentActivity.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/BankPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaPostRequest.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_fragment_user_info.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/AppotaLogger.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/TransactionLogFragment.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/ConfirmBankPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/GooglePaymentActivity.java" />
         <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/PaypalPaymentActivity.java" />
-        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/widget/SDKButton.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/SMSPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_app_msg.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/anim/com_appota_top_appear.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/anim/com_appota_top_disappear.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/widget/MsgManager.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_fragment_login.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/UserInfoFragment.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/AppotaAction.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_activity_payment.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_activity_user_info.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/validator/validator/NotEmptyValidator.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/values/strings_appota.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/values-vi/strings_appota.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/validator/validator/SixCharacterValidator.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/validator/Form.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/CardPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/BankPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/values/arrays_appota.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/SDKUtil.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/PaymentActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/res/layout/facebook_login_web.xml" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Base64.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/SecurePreferences.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaNetworkHelper.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Constants.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/model/AppotaSession.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaGameSDK.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaPreferenceHelper.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/UserActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/UserInfoActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/adapter/AccountAdapter.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/RegisterFragment.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/ConfirmPaypalPaymentActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/appota/sample/gamesdk/LoginReceiver.java" />
+        <option value="$PROJECT_DIR$/src/com/appota/sample/gamesdk/MainActivity.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/model/TransactionResult.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/model/AppotaPaymentResult.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaReceiver.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/widget/AlertDialogManager.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/UpdateUserInfoFragment.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/LoginFragment.java" />
+        <option value="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Util.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="58" />
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="691" />
+    <option name="width" value="1222" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,7 +214,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDKSample" />
+              <option name="myItemId" value="AppotaGameSDK" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,7 +224,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDKSample" />
+              <option name="myItemId" value="AppotaGameSDK" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -188,49 +232,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gamesdk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDKSample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDKSample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDKSample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppotaGameSDK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="raw" />
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,14 +247,14 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="project.propCompiler" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AppotaGameSDK" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/keystores/apple_alias_vlthenhi.keystore" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
@@ -260,14 +262,23 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="false" />
+    <property name="ExportedModule" value="AppotaGameSDKSample" />
+    <property name="ExportedApkPath" value="$USER_HOME$/Downloads/App.apk" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="SearchEverywhereHistory" value="Util&#10;UserAc&#10;AlertD&#10;LoginF&#10;AppotaSess&#10;Uti&#10;Cons&#10;AppotaNet&#10;AppotaPre&#10;NetWo&#10;NEtw&#10;AppotaPost&#10;DialogM&#10;netwo" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.appota.gamesdk.widget" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../AppotaGameSDK/res/drawable" />
-      <recent name="$PROJECT_DIR$/../AppotaGameSDK/res/values-vi" />
-      <recent name="$PROJECT_DIR$/../AppotaGameSDK/res/drawable-hdpi" />
+      <recent name="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons" />
+      <recent name="$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core" />
       <recent name="$PROJECT_DIR$/../AppotaGameSDK/res/anim" />
       <recent name="$PROJECT_DIR$/../AppotaGameSDK/res/drawable-xxhdpi" />
+      <recent name="$PROJECT_DIR$/../AppotaGameSDK/res/drawable-xhdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.AppotaGameSDKSample">
@@ -378,6 +389,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
@@ -396,6 +408,7 @@
       <option name="ACTIVITY_CLASS" value="com.appota.sample.gamesdk.MainActivity" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
       <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
@@ -423,6 +436,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1bd32270-ddf9-46df-ba57-4b48c0678a2c" name="Default" comment="" />
@@ -432,7 +450,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="691" extended-state="0" />
+    <frame x="58" y="22" width="1222" height="778" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -440,54 +458,61 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3242424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38178635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39229423" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3242424" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4090909" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2322034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3242424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38178635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2322034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3242424" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32575756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39267015" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3242424" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4090909" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -501,150 +526,411 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaGameSDK.java">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/AppotaAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="5" selection-start="6932" selection-end="9970" vertical-scroll-proportion="0.0" vertical-offset="1986" max-vertical-offset="4620">
+        <state line="5" column="73" selection-start="221" selection-end="221" vertical-scroll-proportion="0.13812155" vertical-offset="0" max-vertical-offset="543" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_fragment_user_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="48" selection-start="2106" selection-end="2106" vertical-scroll-proportion="1.0755814" vertical-offset="135" max-vertical-offset="2040" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/UserInfoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="65" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.13812155" vertical-offset="225" max-vertical-offset="2520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_activity_payment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="52" selection-start="2060" selection-end="2060" vertical-scroll-proportion="-12.222222" vertical-offset="405" max-vertical-offset="1365" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_activity_user_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="53" selection-start="551" selection-end="551" vertical-scroll-proportion="0.40697673" vertical-offset="0" max-vertical-offset="1125" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/validator/validator/SixCharacterValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.071428575" vertical-offset="0" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/validator/validator/NotEmptyValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="51" selection-start="609" selection-end="609" vertical-scroll-proportion="0.47619048" vertical-offset="0" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/validator/Form.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="89" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.6666667" vertical-offset="210" max-vertical-offset="840" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/ErrorNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="282" selection-end="282" vertical-scroll-proportion="0.21428572" vertical-offset="0" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/SMSPaymentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="259" column="54" selection-start="11904" selection-end="11904" vertical-scroll-proportion="1.2852513" vertical-offset="2342" max-vertical-offset="4860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/BankPaymentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="255" column="30" selection-start="11836" selection-end="11836" vertical-scroll-proportion="0.45218801" vertical-offset="2751" max-vertical-offset="3900" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/CardPaymentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="31" selection-start="5449" selection-end="5449" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="4830" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/samples/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/values/arrays_appota.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="616" selection-end="616" vertical-scroll-proportion="0.45238096" vertical-offset="30" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaPreferenceHelper.java">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_sdk_button_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1470" selection-end="1470" vertical-scroll-proportion="0.5691824" vertical-offset="359" max-vertical-offset="1485">
-          <folding />
-        </state>
+        <state line="11" column="48" selection-start="463" selection-end="463" vertical-scroll-proportion="0.27966103" vertical-offset="0" max-vertical-offset="810" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Util.java">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/widget/AppotaSDKButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="31" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.5188679" vertical-offset="0" max-vertical-offset="10635">
-          <folding />
-        </state>
+        <state line="175" column="43" selection-start="5204" selection-end="5204" vertical-scroll-proportion="0.9967585" vertical-offset="1515" max-vertical-offset="4485" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaUser.java">
+    <entry file="jar://$PROJECT_DIR$/../../work/android-sdk-macosx/platforms/android-16/android.jar!/org/json/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="2145" selection-end="2145" vertical-scroll-proportion="1.4262295" vertical-offset="330" max-vertical-offset="1260">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1411#1457#0" expanded="false" />
-            <element signature="e#1864#2786#0" expanded="false" />
-            <element signature="e#2294#2328#0" expanded="false" />
-            <element signature="e#2775#2776#0" expanded="false" />
-            <element signature="e#2867#3130#0" expanded="false" />
-            <element signature="e#3119#3120#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="96" column="0" selection-start="4520" selection-end="4520" vertical-scroll-proportion="0.73913044" vertical-offset="1170" max-vertical-offset="1515" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../AppotaGameSDK/libs/volley.jar!/com/android/volley/toolbox/JsonObjectRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="890" selection-end="890" vertical-scroll-proportion="0.515625" vertical-offset="0" max-vertical-offset="320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaStringGetRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="349" selection-end="349" vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="345" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_facebook_login_web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="0.37190083" vertical-offset="0" max-vertical-offset="605" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaPostRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1900" selection-end="1900" vertical-scroll-proportion="1.2163935" vertical-offset="244" max-vertical-offset="825">
+        <state line="70" column="35" selection-start="2510" selection-end="2534" vertical-scroll-proportion="0.73344105" vertical-offset="371" max-vertical-offset="990" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="632">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="74" selection-start="401" selection-end="401" vertical-scroll-proportion="-0.64781904" vertical-offset="551" max-vertical-offset="1770">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/PaymentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="489" column="81" selection-start="25141" selection-end="25141" vertical-scroll-proportion="0.0" vertical-offset="6466" max-vertical-offset="7800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/SecurePreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="22" selection-start="4345" selection-end="4345" vertical-scroll-proportion="2.6107595" vertical-offset="0" max-vertical-offset="7440">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/SDKUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="38" selection-start="416" selection-end="416" vertical-scroll-proportion="0.37292817" vertical-offset="0" max-vertical-offset="362">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaNetworkHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="76" selection-start="14349" selection-end="14349" vertical-scroll-proportion="0.60655737" vertical-offset="3415" max-vertical-offset="9750">
+        <state line="216" column="57" selection-start="9791" selection-end="9791" vertical-scroll-proportion="0.0" vertical-offset="2987" max-vertical-offset="13845">
           <folding>
-            <element signature="e#15818#15864#0" expanded="false" />
-            <element signature="e#19982#20033#0" expanded="false" />
-            <element signature="e#21218#21270#0" expanded="false" />
-            <element signature="e#24097#24149#0" expanded="false" />
-            <element signature="e#24770#24822#0" expanded="false" />
-            <element signature="e#25196#25248#0" expanded="false" />
-            <element signature="e#25709#25761#0" expanded="false" />
-            <element signature="e#31258#31291#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#23783#23829#0" expanded="true" />
+            <element signature="e#30696#30747#0" expanded="true" />
+            <element signature="e#31932#31984#0" expanded="true" />
+            <element signature="e#34811#34863#0" expanded="true" />
+            <element signature="e#35484#35536#0" expanded="true" />
+            <element signature="e#35910#35962#0" expanded="true" />
+            <element signature="e#36423#36475#0" expanded="true" />
+            <element signature="e#41972#42005#0" expanded="true" />
+            <element signature="e#43751#43771#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/values/styles_appota.xml">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="870" selection-end="870" vertical-scroll-proportion="0.5188679" vertical-offset="150" max-vertical-offset="750">
+        <state line="16" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="-2.320442" vertical-offset="1035" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/values/com_appota_vpi__styles.xml">
+    <entry file="jar://$PROJECT_DIR$/../../work/android-sdk-macosx/platforms/android-16/android.jar!/android/os/Bundle.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="60" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.38050315" vertical-offset="584" max-vertical-offset="1125">
+        <state line="76" column="16" selection-start="3216" selection-end="3216" vertical-scroll-proportion="0.3322785" vertical-offset="915" max-vertical-offset="2850">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/drawable/com_appota_bg_main_layout.xml">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/RegisterFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="192" selection-end="192" vertical-scroll-proportion="0.14150943" vertical-offset="0" max-vertical-offset="318">
+        <state line="129" column="40" selection-start="5775" selection-end="5775" vertical-scroll-proportion="0.3308642" vertical-offset="1306" max-vertical-offset="1920">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/layout/com_appota_main_layout.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/appota/sample/gamesdk/LoginReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="39" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.41237113" vertical-offset="390" max-vertical-offset="1155">
+        <state line="13" column="60" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/appota/sample/gamesdk/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="93" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/model/AppotaPaymentResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1005">
           <folding>
-            <element signature="e#1290#1317#0" expanded="false" />
-            <element signature="e#2447#2475#0" expanded="false" />
+            <element signature="e#278#279#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#395#396#0" expanded="false" />
+            <element signature="e#414#415#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
+            <element signature="e#515#516#0" expanded="false" />
+            <element signature="e#542#543#0" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#691#692#0" expanded="false" />
+            <element signature="e#735#736#0" expanded="false" />
+            <element signature="e#768#769#0" expanded="false" />
+            <element signature="e#804#805#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/SMSPaymentActivity.java">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/model/TransactionResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="87" selection-start="6531" selection-end="6531" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="4095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/PaypalPaymentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="87" selection-start="7422" selection-end="7422" vertical-scroll-proportion="0.6132075" vertical-offset="1590" max-vertical-offset="3315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/BankPaymentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="87" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.3301887" vertical-offset="1425" max-vertical-offset="3270">
+        <state line="38" column="38" selection-start="320" selection-end="898" vertical-scroll-proportion="0.90189874" vertical-offset="0" max-vertical-offset="945">
           <folding>
-            <element signature="e#8402#8446#0" expanded="false" />
-            <element signature="e#8800#8849#0" expanded="false" />
-            <element signature="e#8981#9019#0" expanded="false" />
-            <element signature="e#9060#9104#0" expanded="false" />
-            <element signature="e#9106#9149#0" expanded="false" />
-            <element signature="e#9208#9249#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/values-v11/styles_appota.xml">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="65" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.38050315" vertical-offset="269" max-vertical-offset="1410">
+        <state line="13" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0726979" vertical-offset="0" max-vertical-offset="619">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/CardPaymentActivity.java">
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/widget/AlertDialogManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="41" selection-start="4418" selection-end="4418" vertical-scroll-proportion="0.0" vertical-offset="975" max-vertical-offset="3705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/widget/SDKButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="103" selection-start="9090" selection-end="9090" vertical-scroll-proportion="0.38235295" vertical-offset="2478" max-vertical-offset="3465">
+        <state line="405" column="5" selection-start="17537" selection-end="17537" vertical-scroll-proportion="2.1631663" vertical-offset="3551" max-vertical-offset="5010">
           <folding>
-            <element signature="e#2116#2179#0" expanded="true" />
-            <element signature="e#2217#2280#0" expanded="true" />
-            <element signature="e#6739#6785#0" expanded="true" />
-            <element signature="e#10380#10414#0" expanded="true" />
+            <element signature="e#12919#12941#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/values/strings_appota.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="18" selection-start="10626" selection-end="10626" vertical-scroll-proportion="0.7576737" vertical-offset="1706" max-vertical-offset="2325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/res/values-vi/strings_appota.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="18" selection-start="8535" selection-end="8535" vertical-scroll-proportion="0.33279485" vertical-offset="1684" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaPreferenceHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="55" selection-start="6161" selection-end="6161" vertical-scroll-proportion="0.18987341" vertical-offset="2475" max-vertical-offset="3210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="383" column="71" selection-start="14820" selection-end="14820" vertical-scroll-proportion="0.0" vertical-offset="5252" max-vertical-offset="15900">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2414#2432#0" expanded="true" />
+            <element signature="e#3474#3496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="317" column="33" selection-start="13944" selection-end="13944" vertical-scroll-proportion="0.5506173" vertical-offset="4412" max-vertical-offset="9390">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5296#5334#0" expanded="true" />
+            <element signature="e#5432#5470#0" expanded="true" />
+            <element signature="e#9380#9420#0" expanded="true" />
+            <element signature="e#12057#12098#0" expanded="true" />
+            <element signature="e#12355#12395#0" expanded="true" />
+            <element signature="e#15868#15912#0" expanded="true" />
+            <element signature="e#17316#17372#0" expanded="true" />
+            <element signature="e#19147#19203#0" expanded="true" />
+            <element signature="e#23921#23954#0" expanded="true" />
+            <element signature="e#24562#24602#0" expanded="true" />
+            <element signature="e#24940#24977#0" expanded="true" />
+            <element signature="e#25209#25245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/fragment/UpdateUserInfoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.3325359" vertical-offset="56" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/commons/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="26" selection-start="6016" selection-end="6016" vertical-scroll-proportion="0.33333334" vertical-offset="1455" max-vertical-offset="5625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/model/AppotaSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="293" selection-end="293" vertical-scroll-proportion="0.32296652" vertical-offset="0" max-vertical-offset="900">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/samples/src/com/appota/sample/gamesdk/LoginReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="39" selection-start="657" selection-end="657" vertical-scroll-proportion="0.4617225" vertical-offset="92" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/samples/src/com/appota/sample/gamesdk/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="43" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.33333334" vertical-offset="840" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/UserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="311" column="24" selection-start="12394" selection-end="12394" vertical-scroll-proportion="0.33333334" vertical-offset="3825" max-vertical-offset="4740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/UserInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="265" column="32" selection-start="11931" selection-end="11931" vertical-scroll-proportion="0.33333334" vertical-offset="2880" max-vertical-offset="5865">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/adapter/AccountAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="14" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.33333334" vertical-offset="345" max-vertical-offset="2070">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../AppotaGameSDK/src/com/appota/gamesdk/core/AppotaGameSDK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="528" column="28" selection-start="23273" selection-end="23273" vertical-scroll-proportion="0.33333334" vertical-offset="6585" max-vertical-offset="12000">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +987,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AppotaGameSDKSample</last-edited>
+          <last-edited>AppotaGameSDK</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -725,7 +1011,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs</last-edited>
+          <last-edited>android-support-v4 (2)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

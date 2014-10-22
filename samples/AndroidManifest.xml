@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.appota.sample.gamesdk"
+    package="com.appota.sample.gamesdk1"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,9 +8,17 @@
         android:targetSdkVersion="16" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- onClan SDK -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <!-- use this for google payment -->
     <uses-permission android:name="com.android.vending.BILLING" />
@@ -24,9 +32,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="MainActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/app_name" >
+            android:name="com.appota.sample.gamesdk.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -39,7 +47,7 @@
             android:launchMode="singleTask"
             android:theme="@style/Theme.Appota.GameSDK"
             android:windowSoftInputMode="adjustPan" >
-            <intent-filter>
+<!--             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -48,7 +56,7 @@
                 <data
                     android:host="gamesdk"
                     android:scheme="appota" />
-            </intent-filter>
+            </intent-filter> -->
         </activity>
         <activity
             android:name="com.appota.gamesdk.UserInfoActivity"
@@ -61,10 +69,6 @@
             android:theme="@style/Theme.Appota.GameSDK" />
 
         <!-- use this for facebook login -->
-        <activity
-            android:name="com.facebook.LoginActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -76,13 +80,61 @@
             android:name="APPOTA_PIRATE_ID"
             android:value="abcxyz123" />
 
-        <!-- user this for twitter login -->
+        <!-- use this for twitter login -->
         <meta-data
-            android:name="com.appota.gamesdk.twitter.consumer.key"
-            android:value="@string/twitter_consumer_key" />
+            android:name="com.appota.twitter.consumer.key"
+            android:value="jdAk53l1QdlgiNSvREjc2bVnL" />
         <meta-data
-            android:name="com.appota.gamesdk.twitter.consumer.secret"
-            android:value="@string/twitter_consumer_secret" />
+            android:name="com.appota.twitter.consumer.secret"
+            android:value="9LkeQp8vdO5GXzeikKQRLHH0aSABwHwci4RnwKSm12Xoauqnw7" />
+
+        <!-- onClan SDK -->
+        <activity
+            android:name="com.onclan.home.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+
+            <!-- onclan login -->
+            <intent-filter>
+                <action android:name="com.onclan.android.sdk.login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="sdk"
+                    android:scheme="onclan" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.onclan.chat.mqtt.ChatService" />
+
+        <activity
+            android:name="com.onclan.android.OnClanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.appota.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.appota.sandbox"
+            android:value="false" />
+        <meta-data
+            android:name="APPOTA_PIRATE_ID"
+            android:value="abc" />
+        <meta-data
+            android:name="com.appota.sandboxApiKey"
+            android:value="a" />
+        <meta-data
+            android:name="com.appota.apiKey"
+            android:value="0e08c327e1ba11e9ac5d23fc86b4c96e053bf65b8" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="onClanGameId"
+            android:value="53cfc8d15c98f3342b8b469c" />
     </application>
 
 </manifest>

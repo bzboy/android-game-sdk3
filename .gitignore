@@ -1,0 +1,10 @@
+/build
+/gen
+/bin
+/facebook
+.classpath
+project.properties
+samples/bin
+samples/gen
+samples/build
+samples/out

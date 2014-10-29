@@ -16,15 +16,14 @@ import com.appota.gamesdk.core.AppotaReceiver;
 import com.appota.gamesdk.model.AppotaSession;
 import com.appota.gamesdk.model.TransactionResult;
 import com.appota.sample.gamesdk1.R;
-import com.onclan.android.OnClanSDK;
 
 public class MainActivity extends Activity {
 
-	// private String apiKey = "123593a5f93eac19e26baee408f9928f0525e6a18";
-	private String apiKey = "0e08c327e1ba11e9ac5d23fc86b4c96e053bf65b8";
+	 private String apiKey = "123593a5f93eac19e26baee408f9928f0525e6a18";
+	//private String apiKey = "0e08c327e1ba11e9ac5d23fc86b4c96e053bf65b8";
 	private String sandboxApiKey = "";
 	private AppotaGameSDK sdk;
-	private OnClanSDK onClanSDK;
+	//private OnClanSDK onClanSDK;
 	private LoginReceiver receiver;
 
 	@Override
@@ -43,7 +42,7 @@ public class MainActivity extends Activity {
 		registerReceiver(receiver, filter);
 		// init sdk
 		AppotaGameSDK.getInstance().setAutoLogin(true);
-		onClanSDK = OnClanSDK.getInstance();
+		//onClanSDK = OnClanSDK.getInstance();
 		sdk = AppotaGameSDK.getInstance();
 		sdk.init(this, "https://developer.appota.com/config.php", false, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
 		// optional
@@ -86,9 +85,9 @@ public class MainActivity extends Activity {
 		sdk.loginGoogle(this);
 	}
 
-	// public void register(View v){
-	// sdk.showRegister();
-	// }
+	public void register(View v) {
+		sdk.showRegister();
+	}
 
 	// if not use AppotaSDKButton, call makePayment() in an event. for example,
 	// on button click
@@ -111,21 +110,21 @@ public class MainActivity extends Activity {
 		sdk.logout();
 	}
 
-	// public void showSMSPayment(View v){
-	// sdk.showSMSPayment(this);
-	// }
-	//
-	// public void showCardPayment(View v){
-	// sdk.showCardPayment(this);
-	// }
-	//
-	// public void showBankPayment(View v){
-	// sdk.showBankPayment(this);
-	// }
-	//
-	// public void showGPPayment(View v){
-	// sdk.showGooglePayment(this);
-	// }
+	public void showSMSPayment(View v) {
+		sdk.showSMSPayment(this);
+	}
+
+	public void showCardPayment(View v) {
+		sdk.showCardPayment(this);
+	}
+
+	public void showBankPayment(View v) {
+		sdk.showBankPayment(this);
+	}
+
+	public void showGPPayment(View v) {
+		sdk.showGooglePayment(this);
+	}
 
 	// implement login recveive to start verify user on your server
 	private class LoginReceiver extends AppotaReceiver {
@@ -134,12 +133,12 @@ public class MainActivity extends Activity {
 		public void onLoginSuccess(AppotaSession user) {
 			// do verify login with your server now
 			Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.username + ", AccessToken= " + user.accessToken, Toast.LENGTH_SHORT).show();
-			onClanSDK.initOnClanSDK(MainActivity.this, user.getOnClanUser());
+			//onClanSDK.initOnClanSDK(MainActivity.this, user.getOnClanUser());
 		}
 
 		@Override
 		public void onLogoutSuccess() {
-			onClanSDK.logoutOnClan();
+			//onClanSDK.logoutOnClan();
 		}
 
 		@Override
@@ -158,14 +157,13 @@ public class MainActivity extends Activity {
 		@Override
 		public void onLoginFail() {
 			// TODO Auto-generated method stub
-			Log.d("ASDASDASDAS", "ZXCZXCVZXCZX");
 		}
 	}
 
 	@Override
 	protected void onDestroy() {
 		sdk.finish();
-		onClanSDK.destroy();
+		//onClanSDK.destroy();
 		unregisterReceiver(receiver);
 		super.onDestroy();
 	}

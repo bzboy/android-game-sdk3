@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="welcome">Xin chào, %s</string>
+    <string name="show_button_instruction">Úp mặt máy xuống đất để hiện lại</string>
+    <string name="dont_show_again">Không hiện nữa</string>
+    <string name="cancel">Huỷ</string>
+    <string name="ok">OK</string>
+    <string name="choose_google_account">Chọn tài khoản google</string>
+    <string name="group">Nhóm</string>
+    <string name="clan">Bang hội</string>
+    <string name="followers">Người theo dõi</string>
+    <string name="sending">Đang gửi</string>
+    <string name="send_failed">Thất bại, ấn để thử lại</string>
+    <string name="members">Thành viên</string>
+    <string name="level">Cấp độ</string>
+    <string name="vip">Vip</string>
+    <string name="me">Tôi</string>
+    <string name="clans">Bang hội</string>
+    <string name="game_details">Thông tin game</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="logout_success">Bạn đã đăng xuất</string>
+    <string name="no_players">Hiện chưa có người chơi nào</string>
+    <string name="players">Người chơi</string>
+    <string name="request_error">Có lỗi xảy ra, vui lòng thử lại</string>
+    <string name="login_onclan">Đăng nhập bằng onClan</string>
+    <string name="quick_login">Chơi thử</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="forgot">Quên mật khẩu</string>
+    <string name="next">Tiếp</string>
+    <string name="back">Quay lại</string>
+    <string name="complete">Hoàn thành</string>
+    <string name="update">Cập nhật</string>
+    <string name="username">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="display_name">Tên hiển thị</string>
+    <string name="update_info_warn">Cập nhật thông tin để dùng onClan</string>
+    <string name="get_onClan">Cài đặt onClan</string>
+    <string name="login">Đăng nhập</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="write_a_message">Soạn tin</string>
+    <string name="chatting_as">Đang chat bằng \'%s\'</string>
+    <string name="loading">Đang tải...</string>
+    <string name="no_clan_found">Hiện tại chưa có bang hội nào</string>
+    <string name="not_joined_any_clan">Bạn chưa tham gia vào bang hội nào</string>
+    <string name="invite_friends">Mời bạn bè</string>
+    <string name="friends">Bạn bè</string>
+    <string name="overall">Tất cả</string>
+    <string name="create_new_clan">Tạo bang hội</string>
+    <string name="chat_connected">Đã kết nối</string>
+    <string name="connection_lost">Mất kết nối</string>
+    <string name="no_internet_connection">Không có internet</string>
+    <string name="connecting">Đang kết nối...</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="profile">Cá nhân</string>
+    <string name="recent_chat_empty">Chào %s, bắt đầu chat ngay!</string>
+    <string name="confirm_logout">Bạn có chắc muốn đăng xuất?</string>
+    <string name="diff_account">Vui lòng đăng nhập cùng tài khoản với onClan để bắt đầu trò chuyện!</string>
+
+    <!-- new string -->
+    <string name="logging_out">Đang đăng xuất...</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="setting">Cài đặt</string>
+    <string name="close">Đóng</string>
+    <string name="chat_send_image">%s gửi ảnh</string>
+    <string name="chat_send_voice">%s gửi tin nhắn thoại</string>
+    <string name="chat_send_sticker">%s gửi nhãn dính</string>
+    <string name="msg_cant_get_data">Đang tải dữ liệu, vui lòng chờ</string>
+    <string name="msg_no_support">Chưa có hỗ trợ, vui lòng thử lại sau</string>
+    <string name="msg_cant_connect_twitter">Không thể kết nối tới Twitter</string>
+    <string name="msg_cant_connect_server">Không thể kết nối tới máy chủ</string>
+    <string name="msg_no_network">Kết nối mạng không khả dụng. Vui lòng kiểm tra và thử lại</string>
+    <string name="msg_username_empty">Tên đăng nhập không được để trống</string>
+    <string name="msg_password_empty">Mật khẩu không được để trống</string>
+    <string name="msg_confirm_pw_empty">Xác nhận mật khẩu không được để trống</string>
+    <string name="msg_confirm_not_correct">Xác nhận mật khẩu sai</string>
+    <string name="msg_email_empty">Emai không được để trống</string>
+    <string name="msg_fullname_empty">Tên đầy đủ không được để trống</string>
+
+    <string name="invite_onclan_friends">Mời bạn từ onClan</string>
+    <string name="invite_facebook_friends">Mời bạn từ Facebook</string>
+    <string name="invite_success">Gửi lời mời thành công</string>
+    <string name="enter_invitation_message">Nhập lời mời</string>
+    <string name="send_invitation">Gửi lời mời</string>
+</resources>

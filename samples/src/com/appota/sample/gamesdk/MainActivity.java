@@ -1,29 +1,32 @@
 package com.appota.sample.gamesdk;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
-import com.appota.facebook.Session;
 import com.appota.gamesdk.commons.AppotaAction;
 import com.appota.gamesdk.core.AppotaGameSDK;
 import com.appota.gamesdk.core.AppotaReceiver;
 import com.appota.gamesdk.model.AppotaSession;
 import com.appota.gamesdk.model.TransactionResult;
 import com.appota.sample.gamesdk1.R;
+import com.onclan.android.core.OnClanInitCallback;
+import com.onclan.android.core.OnClanSDK;
+import com.onclan.android.core.OnClanSubType;
+import com.onclan.android.core.OnClanUserInfoCallback;
 
 public class MainActivity extends Activity {
 
-	 private String apiKey = "123593a5f93eac19e26baee408f9928f0525e6a18";
+	//private String apiKey = "c87d39adff487a2b89cb9719a10f93050534cff36";
 	//private String apiKey = "0e08c327e1ba11e9ac5d23fc86b4c96e053bf65b8";
-	private String sandboxApiKey = "";
+	//private String apiKey = "1817a27ba6e5b282dd6920f35ed84d940541fd226";
+	private String apiKey = "K-A163561-U00000-CEBZXQ-0062D6E59CBB113A";
+	private String sandboxApiKey = "13f89ae205bf254e62f3dde371e253b9053d70638";
 	private AppotaGameSDK sdk;
-	//private OnClanSDK onClanSDK;
+	private OnClanSDK onClanSDK;
 	private LoginReceiver receiver;
 
 	@Override
@@ -39,46 +42,29 @@ public class MainActivity extends Activity {
 		filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
 		filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
 		filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.UPDATE_USER_INFO_ACTION);
 		registerReceiver(receiver, filter);
 		// init sdk
-		AppotaGameSDK.getInstance().setAutoLogin(true);
-		//onClanSDK = OnClanSDK.getInstance();
+		onClanSDK = OnClanSDK.getInstance();
 		sdk = AppotaGameSDK.getInstance();
-		sdk.init(this, "https://developer.appota.com/config.php", false, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
-		// optional
-		// sdk.setShowButtonType(AppotaGameSDK.SHOW_ACCOUNT_BUTTON);
-
-		// show or hide switch, logout button
-		// sdk.setShowUserFunctionButtons(false);
-		// sdk.prepareFacebookLogin(this, savedInstanceState);
-		// we use 2 way to login facebook: native and web
-		// sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_NATIVE);
-		// sdk.setLoginFacebookType(AppotaGameSDK.LOGIN_FACEBOOK_WEB);
-		// if login type is web, you have to set clientId and clientSecret
-		// (clientId, clientSecret get from http://developer.appota.com)
-		// sdk.setClientKey("8d638e1421080c68d9dfb9bc89c56adf0525e6957");
-		// sdk.setClientSecret("90b830d7b5fe5b771baf4e2e41fb0b9d0525e6957");
+		sdk.setAutoLogin(true);
+		sdk.init(this, "http://123.30.173.181:8080/appota.config.json", false, "http://filestore9.com/test.php", apiKey, sandboxApiKey);
 	}
 
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
-		super.onActivityResult(requestCode, resultCode, data);
-		Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
-	}
+//	@Override
+//	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//		// TODO Auto-generated method stub
+//		super.onActivityResult(requestCode, resultCode, data);
+//		Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
+//	}
 
 	public void manualLogin(View v) {
-		sdk.manualLogin();
-		// sdk.showLogin();
-		// sdk.isUserLogin();
-		// List<PaymentMethod> list = sdk.getListPaymentMethod();
-		// for(PaymentMethod method : list){
-		// Log.d("AADASDASDASD", method.name);
-		// }
+		sdk.showLogin();
 	}
 
 	public void loginFacebook(View v) {
 		sdk.loginFacebook(this, null);
+		//onClanSDK.submitScore("1", 500);
 	}
 
 	public void loginGoogle(View v) {
@@ -102,7 +88,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void switchAccount(View v) {
-		sdk.switchAccount();
+		sdk.changeAccount();
 		sdk.setUseSDKButton(false);
 	}
 
@@ -111,7 +97,8 @@ public class MainActivity extends Activity {
 	}
 
 	public void showSMSPayment(View v) {
-		sdk.showSMSPayment(this);
+		//sdk.showSMSPayment(this);
+		sdk.showUnipinPayment(this);
 	}
 
 	public void showCardPayment(View v) {
@@ -133,37 +120,62 @@ public class MainActivity extends Activity {
 		public void onLoginSuccess(AppotaSession user) {
 			// do verify login with your server now
 			Toast.makeText(MainActivity.this, "Just for login testing. Username = " + user.username + ", AccessToken= " + user.accessToken, Toast.LENGTH_SHORT).show();
-			//onClanSDK.initOnClanSDK(MainActivity.this, user.getOnClanUser());
+			String[] onClanFeatures = new String[] {OnClanSubType.TYPE_CHAT, OnClanSubType.TYPE_LEADERBOARD};
+			onClanSDK.initOnClanSDK(MainActivity.this, onClanFeatures, user.getOnClanUser(), new OnClanInitCallback() {
+				@Override
+				public void onInited() {
+					Toast.makeText(MainActivity.this, "onClan inited", Toast.LENGTH_SHORT).show();
+					onClanSDK.getUserInfo(new OnClanUserInfoCallback() {
+						
+						@Override
+						public void onGetUserInfoSuccess(String json) {
+							// TODO Auto-generated method stub
+							Toast.makeText(MainActivity.this, json, Toast.LENGTH_SHORT).show();
+						}
+						
+						@Override
+						public void onGetUserInfoError(String message) {
+							// TODO Auto-generated method stub
+							Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+						}
+					});
+				}
+			});
+			onClanSDK.enableLogout(false);
 		}
 
 		@Override
 		public void onLogoutSuccess() {
-			//onClanSDK.logoutOnClan();
+			onClanSDK.logoutOnClan();
 		}
 
 		@Override
 		public void onSwitchAccountSuccess(AppotaSession user) {
-			// Toast.makeText(MainActivity.this,
-			// "Just for switch testing. Username = " + user.getUsername(),
-			// Toast.LENGTH_SHORT).show();
+			onClanSDK.switchAccount(user.getOnClanUser());
 		}
 
 		// payment success callback
 		@Override
 		public void onPaymentSuccess(TransactionResult paymentResult) {
-
+			
 		}
 
 		@Override
 		public void onLoginFail() {
 			// TODO Auto-generated method stub
 		}
+
+		@Override
+		public void onUpdateUserInfo(String userId, String displayName) {
+			// TODO Auto-generated method stub
+			android.util.Log.d("OAOAOAOAOAOAOa", userId + ", " + displayName);
+		}
 	}
 
 	@Override
 	protected void onDestroy() {
 		sdk.finish();
-		//onClanSDK.destroy();
+		onClanSDK.destroy();
 		unregisterReceiver(receiver);
 		super.onDestroy();
 	}

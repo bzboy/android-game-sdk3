@@ -157,7 +157,11 @@ Appota Game SDK给开发商提供一个便利的配置方式。 您需要进行�
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
     filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
-    filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
+		filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.UPDATE_USER_INFO_ACTION);
     registerReceiver(receiver, filter);
 
     // Init SDK

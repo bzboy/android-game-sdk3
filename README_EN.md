@@ -79,6 +79,8 @@ Download Appota Game SDK for Android and import into IDE.
 - To login with Facebook Account, add following configuration:
  
 ``` xml
+<activity android:name="com.appota.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
+    android:label="@string/app_name" />
     <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="YOUR_FACEBOOK_APP_ID" />
 ```
 
@@ -146,7 +148,11 @@ To init SDK, place this code block in onCreate() method of activity:
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
     filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
-    filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
+		filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.UPDATE_USER_INFO_ACTION);
     registerReceiver(receiver, filter);
     
     // Init SDK

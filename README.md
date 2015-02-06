@@ -153,7 +153,11 @@ Appota Game SDK cung cấp một phương thức cấu hình tiện lợi với 
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
     filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
-    filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
+		filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
+		filter.addAction(AppotaAction.UPDATE_USER_INFO_ACTION);
     registerReceiver(receiver, filter);
 
     // Init SDK

@@ -109,7 +109,7 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
         @Override
         public void onLoginSuccess(AppotaSession user) {
             //do verify login with your server now
-            Toast.makeText(MainActivity.this, user.username, Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
         }
 
         @Override
@@ -122,12 +122,11 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
         public void onPaymentSuccess(TransactionResult paymentResult) {
 
         }
-        
-        @Override
-		public void onSwitchAccountSuccess(AppotaSession arg0) {
-			// TODO Auto-generated method stub
-			
-		}
+
+	@Override
+	public void onLoginFail() {
+	    // TODO Auto-generated method stub
+	}
     } 
 ``` 
 
@@ -148,26 +147,31 @@ To init SDK, place this code block in onCreate() method of activity:
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
     filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
-		filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.UPDATE_USER_INFO_ACTION);
+	filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+	filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
+	filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
     registerReceiver(receiver, filter);
     
     // Init SDK
-    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(context, configUrl, isUseSDKButton, noticeUrl, apiKey, sandboxApiKey);
+    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(context, apiKey, noticeUrl, configUrl);
 ```
 
 - Context context: Application's context.
 - String configUrl: Link to JSON config file.
-- boolean isUseSDKButton: On/off default sdk buttton
 - String noticeUrl: Called when a transaction is finished, if you have already config IPN on developer site, just pass ""
-- String apiKey/sandboxApiKey: Provided by Appota for your application.
+- String apiKey: Provided by Appota for your application.
 
-In the case you don't use default SDK button (isUseSDKButton = false), you can create your custom buttons to
-call separate UI:
+You can create your custom buttons to call separate UI:
 
+Place this code block in onCreate() method of activity:
+```java
+    @Override
+    protected void onDestroy() {
+        sdk.finish();
+        unregisterReceiver(receiver);
+        super.onDestroy();
+    }
+```
 
 ``` java
     sdk.makePayment(); // Show payment UI

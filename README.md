@@ -113,6 +113,11 @@ Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu h
         public void onPaymentSuccess(TransactionResult paymentResult) {
 
         }
+        
+	@Override
+	public void onLoginFail() {
+		// TODO Auto-generated method stub
+	}
     } 
 ```
 
@@ -144,6 +149,16 @@ Appota Game SDK cung cấp một phương thức cấu hình tiện lợi với 
  - configUrl: Link tới file cấu hình JSON.
  - noticeUrl: Được gọi khi một transaction kết thúc, nếu bạn đã cấu hình IPN trên trang developer có thể truyền giá trị "" vào.
  - apiKey: Key được cung cấp bởi Appota cho ứng dụng của bạn.
+ 
+ Đặt đoạn mã sau trong hàm onDestroy() của activity:
+```java
+	@Override
+	protected void onDestroy() {
+		sdk.finish();
+		unregisterReceiver(receiver);
+		super.onDestroy();
+	}
+```
 
 Bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng biệt:
 
@@ -158,8 +173,6 @@ Bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng b
 ``` java
     sdk.switchAccount(); // Switch between accounts
 ```
- 
-
 **4 - Chạy SDK Samples**
 
 Xem thêm sample code được kèm theo bộ SDK để thêm chi tiết.

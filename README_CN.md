@@ -51,36 +51,20 @@ Android Appota Game SDK 是给你应用集成Appota 用户和支付系统的最�
 -添加以下activity配置以便使用充值卡付费面板：
 
 ``` xml
-    <activity android:name="com.appota.gamesdk.CardPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-```
-
--添加以下activity配置以便使用网络银行付费面板：
-
-``` xml
-    <activity android:name="com.appota.gamesdk.BankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-```
-
--添加以下activity配置以便使用支付宝付费面板：
-
-
-``` xml
-    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
-```
-
--添加以下activity配置以便使用Google Play Payment付费面板：
-
-
-``` xml
-    <activity android:name="com.appota.gamesdk.GooglePaymentActivity" android:theme="@style/Theme.Appota.GameSDK" 
-    android:configChanges="orientation|keyboardHidden|screenSize"/>
+    <activity
+            android:name="com.appota.gamesdk.UserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Appota.GameSDK"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.appota.gamesdk.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Appota.GameSDK"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.appota.gamesdk.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Appota.GameSDK" />
 ```
 
 -添加以下内容以便打开、关闭sandbox 状态：
@@ -136,6 +120,11 @@ Appota Game SDK给所有需要的配置提供AppotaConfiguration class以便集�
         public void onPaymentSuccess(TransactionResult paymentResult) {
 
         }
+
+	@Override
+	public void onLoginFail() {
+	    // TODO Auto-generated method stub
+	}
     } 
 ```
 
@@ -157,21 +146,30 @@ Appota Game SDK给开发商提供一个便利的配置方式。 您需要进行�
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
     filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
-    filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+	filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+	filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
+	filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);;
     registerReceiver(receiver, filter);
 
     // Init SDK
-    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
-    String configUrl, boolean isUseSDKButton, String noticeUrl, 
-    String apiKey, String sandboxApiKey);
+    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, String apiKey, String noticeUrl, String configUrl);
 ```
 
  - configUrl:到JSON配置文件的链接
- - isUseSDKButton: 关闭、打开 SDK按钮
  - noticeUrl:叫出当交易结束， 如果你已经在developer.appota.com 配置IPN就可以给""填写价值。
- - apiKey/sandboxApiKey:Appota 将你的应用提供的key 
+ - apiKey: Appota 将你的应用提供的key 
+ 
+ 把以下的code放在以下activity中onDestroy()函数：
+```java
+    @Override
+    protected void onDestroy() {
+        sdk.finish();
+        unregisterReceiver(receiver);
+        super.onDestroy();
+    }
+```
 
-如果不想使用 SDK的默认的floating button(isUseSDKButton = false),你也可以任意创造按钮并叫出不同的界面。
+你也可以任意创造按钮并叫出不同的界面。
 
 ``` java
     sdk.makePayment(); // Show payment UI

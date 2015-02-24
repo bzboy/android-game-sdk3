@@ -163,7 +163,7 @@ To init SDK, place this code block in onCreate() method of activity:
 
 You can create your custom buttons to call separate UI:
 
-Place this code block in onCreate() method of activity:
+Place this code block in onDestroy() method of activity:
 ```java
     @Override
     protected void onDestroy() {

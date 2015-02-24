@@ -60,30 +60,11 @@ Download Appota Game SDK cho Android và import vào IDE.
     <activity android:name="com.appota.gamesdk.ConfirmBankPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
 ```
 
-- Để sử dụng giao diện thanh toán Paypal, thêm cấu hình activity sau:
-
-``` xml
-    <activity android:name="com.appota.gamesdk.PaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <activity android:name="com.appota.gamesdk.ConfirmPaypalPaymentActivity" android:theme="@style/Theme.Appota.GameSDK" android:configChanges="orientation|keyboardHidden|screenSize"/>
-    <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
-    <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity" />
-```
-
 - Để sử dụng giao diện thanh toán Google Play Payment, thêm cấu hình activity sau:
 
 ``` xml
     <activity android:name="com.appota.gamesdk.GooglePaymentActivity" android:theme="@style/Theme.Appota.GameSDK" 
     android:configChanges="orientation|keyboardHidden|screenSize"/>
-```
-
-- Để bật hoặc tắt chế độ sandbox, thêm dòng sau:
-
-``` xml
-    <meta-data android:name="sandbox" android:value="false" />
 ```
 
 - Để sử dụng tài khoản Google để đăng nhập, thêm cấu hình permission sau:
@@ -109,7 +90,6 @@ Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu h
 **Các cấu hình bắt buộc:**
 
  - apiKey
- - sandboxKey
  - payment methods
  - login methods
  - a class inherits from AppotaReceiver to get login/logout/payment successfully.
@@ -152,26 +132,20 @@ Appota Game SDK cung cấp một phương thức cấu hình tiện lợi với 
      // Register receiver to receive callback when login/logout/payment success
     MyReceiver receiver = new MyReceiver();
     IntentFilter filter = new IntentFilter();
-    filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.SWITCH_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
-		filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
-		filter.addAction(AppotaAction.UPDATE_USER_INFO_ACTION);
+    filter.addAction(AppotaAction.LOGIN_SUCCESS_ACTION);			   			filter.addAction(AppotaAction.PAYMENT_SUCCESS_ACTION);
+	filter.addAction(AppotaAction.LOGIN_FAIL_ACTION);
+	filter.addAction(AppotaAction.LOGOUT_SUCCESS_ACTION);
     registerReceiver(receiver, filter);
 
     // Init SDK
-    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, 
-    String configUrl, boolean isUseSDKButton, String noticeUrl, 
-    String apiKey, String sandboxApiKey);
+    AppotaGameSDK sdk = AppotaGameSDK.getInstance().init(Context context, String apiKey, String noticeUrl, String configUrl);
 ```
 
  - configUrl: Link tới file cấu hình JSON.
- - isUseSDKButton: Tắt/bật nút SDK.
  - noticeUrl: Được gọi khi một transaction kết thúc, nếu bạn đã cấu hình IPN trên trang developer có thể truyền giá trị "" vào.
- - apiKey/sandboxApiKey: Các key được cung cấp bởi Appota cho ứng dụng của bạn.
+ - apiKey: Key được cung cấp bởi Appota cho ứng dụng của bạn.
 
-Trong trường hợp không muốn sử dụng nút nổi mặc định của SDK (isUseSDKButton = false), bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng biệt:
+Bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng biệt:
 
 ``` java
     sdk.makePayment(); // Show payment UI

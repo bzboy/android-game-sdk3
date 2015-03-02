@@ -36,7 +36,6 @@ Select Existing Android project
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/2.png)
 
 Click Browse and point to downloaded SDK
-![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/3.png)
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/4.png)
 
 Select SDK project and Sample project to import:

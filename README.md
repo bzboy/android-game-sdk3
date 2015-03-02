@@ -124,7 +124,7 @@ import AppotaGameSDK project to your IDE:
     <meta-data android:name="com.appota.gamesdk.twitter.consumer.secret" android:value="YOUR_SECRET_KEY" />
 ```
 
-**3. Integrate SDK**
+# III. Integrate SDK**
 
 Appota Game SDK provides class AppotaConfiguration for all needed configuration to integrate Game SDK.
 
@@ -238,6 +238,6 @@ You can create your custom buttons to call separate UI:
 	sdk.setState(String state);
 ```
 
-**4 - Run SDK samples**
+# IV. Run SDK samples**
 
 You can see the more detail in the attached sample code.

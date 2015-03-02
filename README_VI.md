@@ -16,11 +16,44 @@ Appota Game SDK cho Android là cách đơn giản nhất để tích hợp user
 
  
 
-**1. Import SDK vào project của bạn**
+# I. Cài đặt SDK
 
-Download Appota Game SDK cho Android và import vào IDE.
+** Tải AppotaGameSDK cho Android: 
+https://github.com/appota/android-game-sdk/archive/master.zip
 
-**2. Cấu hình SDK**
+Hoặc dùng git tool để clone: https://github.com/appota/android-game-sdk.git
+
+** Import SDK project:
+
+import AppotaGameSDK vào IDE của bạn:
+<br/>
+*** Trên Eclipse IDE, chọn File -> Import
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/1.png)
+<br/>
+<br/>
+*** Chọn Existing Android project
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/2.png)
+<br/>
+<br/>
+*** Trỏ đến thư mục SDK vừa tải
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/3.png)
+<br/>
+<br/>
+*** Chọn 2 project là SDK và Sample để import:
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/5.png)
+<br/>
+<br/>
+*** Tham chiếu project của bạn đến SDK:
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
+<br/>
+<br/>
+
+# II. Cấu hình SDK**
 
 **Cấu hình file \<AndroidMainfest.xml\>**
 
@@ -83,7 +116,7 @@ Download Appota Game SDK cho Android và import vào IDE.
 ```
  
 
-**3. Tích hợp SDK**
+# III. Tích hợp SDK**
 
 Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu hình cần thiết để tích hợp Game SDK.
 
@@ -95,31 +128,34 @@ Appota Game SDK cung cấp class AppotaConfiguration cho tất cả các cấu h
  - a class inherits from AppotaReceiver to get login/logout/payment successfully.
 
 ``` java
-     private class MyReceiver extends AppotaReceiver {
+    private class MyReceiver extends AppotaReceiver {
 
         @Override
-        public void onLoginSuccess(AppotaSession user) {
-            //do verify login with your server now
-            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+        public void onLoginSuccess(AppotaUser user) {
+            //Called when user login successfully, AppotaUser parameter contains basic 
+            //user info (userId, userName, accessToken, ...)
+            //See sample code for more details
         }
 
         @Override
         public void onLogoutSuccess() {
-
+		//Called when user logout successfully
         }
 
         //payment success callback
         @Override
         public void onPaymentSuccess(TransactionResult paymentResult) {
-
+		//Called when user did a transaction successfully, TransactionResult parameter contains basic 
+		//information of transaction (transactionId, time, amount, ...)
+		//See sample code for more details
         }
-        
+
 	@Override
 	public void onLoginFail() {
-		// TODO Auto-generated method stub
+	    // Called when user login fail
 	}
     } 
-```
+``` 
 
 **Cấu hình JSON:**
 
@@ -173,6 +209,23 @@ Bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng b
 ``` java
     sdk.switchAccount(); // Switch between accounts
 ```
-**4 - Chạy SDK Samples**
+
+*** Các phương thức khác của SDK:
+```java
+	//if keep login session set to true, user will not have to re-login next time. Default is true
+	sdk.setKeepLoginSession(boolean keep);
+```
+<br/>
+```java
+	//show login dialog manually
+	sdk.showLogin();
+```
+<br/>
+```java
+	//optional parameter use to include in payment transaction return
+	sdk.setState(String state);
+```
+
+# IV. Chạy SDK Samples**
 
 Xem thêm sample code được kèm theo bộ SDK để thêm chi tiết.

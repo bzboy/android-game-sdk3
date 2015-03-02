@@ -17,11 +17,44 @@ Android Appota Game SDK 是给你应用集成Appota 用户和支付系统的最�
 
  
 
-**1.给project import SDK**
+# I. Install SDK
 
-下载Android的Appota Game SDK 然后import 到IDE。
+** Download Appota Game SDK for Android here: 
+https://github.com/appota/android-game-sdk/archive/master.zip
 
-**2. 配置 SDK**
+Or if you use any git tool, clone this url: https://github.com/appota/android-game-sdk.git
+
+** Import downloaded SDK project to your game project:
+
+import AppotaGameSDK project to your IDE:
+<br/>
+*** On Eclipse IDE, click File -> Import
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/1.png)
+<br/>
+<br/>
+*** Select Existing Android project
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/2.png)
+<br/>
+<br/>
+*** Click Browse and point to downloaded SDK
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/3.png)
+<br/>
+<br/>
+*** Select SDK project and Sample project to import:
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/5.png)
+<br/>
+<br/>
+*** Reference your game project to AppotaGameSDK project
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
+<br/>
+<br/>
+
+# II. 配置 SDK**
 
 **配置文件 \<AndroidMainfest.xml\>**
 
@@ -89,7 +122,7 @@ Android Appota Game SDK 是给你应用集成Appota 用户和支付系统的最�
 ```
  
 
-**3. 集成 SDK**
+# III. 集成 SDK**
 
 Appota Game SDK给所有需要的配置提供AppotaConfiguration class以便集成Game SDK
 
@@ -101,32 +134,36 @@ Appota Game SDK给所有需要的配置提供AppotaConfiguration class以便集�
  - login methods
  - a class inherits from AppotaReceiver to get login/logout/payment successfully.
 
+
 ``` java
-     private class MyReceiver extends AppotaReceiver {
+    private class MyReceiver extends AppotaReceiver {
 
         @Override
-        public void onLoginSuccess(AppotaSession user) {
-            //do verify login with your server now
-            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+        public void onLoginSuccess(AppotaUser user) {
+            //Called when user login successfully, AppotaUser parameter contains basic 
+            //user info (userId, userName, accessToken, ...)
+            //See sample code for more details
         }
 
         @Override
         public void onLogoutSuccess() {
-
+		//Called when user logout successfully
         }
 
         //payment success callback
         @Override
         public void onPaymentSuccess(TransactionResult paymentResult) {
-
+		//Called when user did a transaction successfully, TransactionResult parameter contains basic 
+		//information of transaction (transactionId, time, amount, ...)
+		//See sample code for more details
         }
 
 	@Override
 	public void onLoginFail() {
-	    // TODO Auto-generated method stub
+	    // Called when user login fail
 	}
     } 
-```
+``` 
 
 ** JSON配置:**
 
@@ -182,8 +219,23 @@ Appota Game SDK给开发商提供一个便利的配置方式。 您需要进行�
 ``` java
     sdk.switchAccount(); // Switch between accounts
 ```
- 
 
-**4 – 运行 SDK Samples**
+*** Other sdk method:
+```java
+	//if keep login session set to true, user will not have to re-login next time. Default is true
+	sdk.setKeepLoginSession(boolean keep);
+```
+<br/>
+```java
+	//show login dialog manually
+	sdk.showLogin();
+```
+<br/>
+```java
+	//optional parameter use to include in payment transaction return
+	sdk.setState(String state);
+```
+
+# IV. 运行 SDK Samples**
 
 参考SDK附件的sample code

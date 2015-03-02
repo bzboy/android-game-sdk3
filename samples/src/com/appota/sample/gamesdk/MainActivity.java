@@ -16,7 +16,7 @@ import com.appota.sample.gamesdk1.R;
 
 public class MainActivity extends Activity {
 
-	private String apiKey = "K-A167374-U00000-JQQTR2-0D2C693ACBF23B52";
+	private String apiKey = "YOUR API KEY";
 	private AppotaGameSDK sdk;
 	private LoginReceiver receiver;
 
@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 		sdk = AppotaGameSDK.getInstance();
 		//if keep login session set to true, user will not have to re-login next time. Default is true
 		sdk.setKeepLoginSession(false);
-		sdk.init(this, apiKey, "http://filestore9.com/test.php", "HTTP://COS.MYQCLOUD.COM/1000283/vn_chongzi/YN_ANDROID.json");
+		sdk.init(this, apiKey, "YOUR NOTICE URL", "YOUR CONFIG URL");
 	}
 
 	public void manualLogin(View v) {

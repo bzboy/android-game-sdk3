@@ -140,25 +140,28 @@ Appota Game SDK provides class AppotaConfiguration for all needed configuration 
     private class MyReceiver extends AppotaReceiver {
 
         @Override
-        public void onLoginSuccess(AppotaSession user) {
-            //do verify login with your server now
-            Toast.makeText(MainActivity.this, user.getAccessToken(), Toast.LENGTH_SHORT).show();
+        public void onLoginSuccess(AppotaUser user) {
+            //Called when user login successfully, AppotaUser parameter contains basic 
+            //user info (userId, userName, accessToken, ...)
+            //See sample code for more details
         }
 
         @Override
         public void onLogoutSuccess() {
-
+		//Called when user logout successfully
         }
 
         //payment success callback
         @Override
         public void onPaymentSuccess(TransactionResult paymentResult) {
-
+		//Called when user did a transaction successfully, TransactionResult parameter contains basic 
+		//information of transaction (transactionId, time, amount, ...)
+		//See sample code for more details
         }
 
 	@Override
 	public void onLoginFail() {
-	    // TODO Auto-generated method stub
+	    // Called when user login fail
 	}
     } 
 ``` 
@@ -216,7 +219,23 @@ You can create your custom buttons to call separate UI:
     sdk.switchAccount(); // Switch between accounts
 ```
 ``` java
-    sdk.logout(boolean isShowLoginWhenLoggedOut); // Logout with option show/hide login popup after logged out
+    sdk.logout(); // Logout
+```
+
+*** Other sdk method:
+```java
+	//if keep login session set to true, user will not have to re-login next time. Default is true
+	sdk.setKeepLoginSession(boolean keep);
+```
+<br/>
+```java
+	//show login dialog manually
+	sdk.showLogin();
+```
+<br/>
+```java
+	//optional parameter use to include in payment transaction return
+	sdk.setState(String state);
 ```
 
 **4 - Run SDK samples**

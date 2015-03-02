@@ -24,18 +24,27 @@ Payment.
 ** Download Appota Game SDK for Android here: 
 https://github.com/appota/android-game-sdk/archive/master.zip
 
-Or if you use any git tool, clone this url:
-https://github.com/appota/android-game-sdk.git
+Or if you use any git tool, clone this url: https://github.com/appota/android-game-sdk.git
 
 ** Import downloaded SDK project to your game project:
 
 import AppotaGameSDK project to your IDE:
+On Eclipse IDE, click File -> Import
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/1.png)
 
-![add](https://github.com/appota/android-onclan-sdk/blob/master/docs/import.png)
+Select Existing Android project
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/2.png)
+
+Click Browse and point to downloaded SDK
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/3.png)
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/4.png)
+
+Select SDK project and Sample project to import:
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/5.png)
 
 reference your project to onClanSDK project
 
-![add](https://github.com/appota/android-onclan-sdk/blob/master/docs/reference2.png)
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
 
 
 # II. Configure SDK**

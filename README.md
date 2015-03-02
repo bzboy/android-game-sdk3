@@ -29,21 +29,27 @@ Or if you use any git tool, clone this url: https://github.com/appota/android-ga
 ** Import downloaded SDK project to your game project:
 
 import AppotaGameSDK project to your IDE:
+<br/>
 On Eclipse IDE, click File -> Import
+<br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/1.png)
-
+<br/>
 Select Existing Android project
+<br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/2.png)
-
+<br/>
 Click Browse and point to downloaded SDK
-![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/4.png)
-
+<br/>
+![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/3.png)
+<br/>
 Select SDK project and Sample project to import:
+<br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/5.png)
-
+<br/>
 reference your project to onClanSDK project
-
+<br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
+<br/>
 
 
 # II. Configure SDK**

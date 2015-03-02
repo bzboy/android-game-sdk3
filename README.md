@@ -30,27 +30,27 @@ Or if you use any git tool, clone this url: https://github.com/appota/android-ga
 
 import AppotaGameSDK project to your IDE:
 <br/>
-On Eclipse IDE, click File -> Import
+*** On Eclipse IDE, click File -> Import
 <br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/1.png)
 <br/>
 <br/>
-Select Existing Android project
+*** Select Existing Android project
 <br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/2.png)
 <br/>
 <br/>
-Click Browse and point to downloaded SDK
+*** Click Browse and point to downloaded SDK
 <br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/3.png)
 <br/>
 <br/>
-Select SDK project and Sample project to import:
+*** Select SDK project and Sample project to import:
 <br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/5.png)
 <br/>
 <br/>
-reference your game project to AppotaGameSDK project
+*** Reference your game project to AppotaGameSDK project
 <br/>
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
 <br/>

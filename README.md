@@ -193,9 +193,7 @@ To init SDK, place this code block in onCreate() method of activity:
 - String configUrl: Link to JSON config file.
 - String noticeUrl: Called when a transaction is finished, if you have already config IPN on developer site, just pass ""
 - String apiKey: Provided by Appota for your application.
-
-You can create your custom buttons to call separate UI:
-
+ 
 Place this code block in onDestroy() method of activity:
 ```java
     @Override
@@ -205,6 +203,8 @@ Place this code block in onDestroy() method of activity:
         super.onDestroy();
     }
 ```
+
+You can create your custom buttons to call separate UI:
 
 ``` java
     sdk.makePayment(); // Show payment UI

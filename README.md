@@ -55,7 +55,11 @@ import AppotaGameSDK project to your IDE:
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
 <br/>
 <br/>
-
+You can see the video guide here
+<br/>
+![add](https://www.youtube.com/watch?v=lup6Ni9Memk)
+<br/>
+<br/>
 # II. Configure SDK**
 
 **Configuration \<AndroidMainfest.xml\>**

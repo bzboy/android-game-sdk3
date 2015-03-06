@@ -52,6 +52,13 @@ import AppotaGameSDK vào IDE của bạn:
 ![add](https://github.com/appota/android-game-sdk/blob/master/docs/images/6.png)
 <br/>
 <br/>
+Bạn có thể xem video hướng dẫn ở đây
+<br/>
+https://www.youtube.com/watch?v=lup6Ni9Memk
+<br/><br/>
+[![AppotaGameSDK](http://img.youtube.com/vi/lup6Ni9Memk/0.jpg)](https://www.youtube.com/watch?v=lup6Ni9Memk)
+<br/>
+<br/>
 
 # II. Cấu hình SDK**
 

@@ -75,6 +75,7 @@ https://www.youtube.com/watch?v=lup6Ni9Memk
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 ```
 
 - Add this permission if use Google Play Payment

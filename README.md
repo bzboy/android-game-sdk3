@@ -57,7 +57,7 @@ import AppotaGameSDK project to your IDE:
 <br/>
 You can see the video guide here
 <br/>
-[[youtube-lup6Ni9Memk-480x390]]
+[![AppotaGameSDK](http://img.youtube.com/vi/lup6Ni9Memk/0.jpg)](https://www.youtube.com/watch?v=lup6Ni9Memk)
 <br/>
 <br/>
 # II. Configure SDK**

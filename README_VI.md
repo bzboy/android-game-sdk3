@@ -220,12 +220,17 @@ Bạn có thể tạo nút bấm tùy chọn và gọi các giao diện riêng b
 
 *** Các phương thức khác của SDK:
 ```java
-	//if keep login session set to true, user will not have to re-login next time. Default is true
+	//Thiết lập lưu lại lần đăng nhập trước, mặc định là có
 	sdk.setKeepLoginSession(boolean keep);
 ```
 <br/>
 ```java
-	//show login dialog manually
+	//Thiết lập tự động hiển thị form đăng nhập khi bắt đầu. Mặc định là có
+	sdk.setAutoShowLoginDialog(boolean autoShow);
+```
+<br/>
+```java
+	//hiển thị form đăng nhập
 	sdk.showLogin();
 ```
 <br/>

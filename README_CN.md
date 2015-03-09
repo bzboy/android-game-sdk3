@@ -234,6 +234,11 @@ Appota Game SDK给开发商提供一个便利的配置方式。 您需要进行�
 ```
 <br/>
 ```java
+	//
+	sdk.setAutoShowLoginDialog(boolean autoShow);
+```
+<br/>
+```java
 	//show login dialog manually
 	sdk.showLogin();
 ```

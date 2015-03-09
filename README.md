@@ -236,6 +236,11 @@ You can create your custom buttons to call separate UI:
 ```
 <br/>
 ```java
+	//set auto show login form when start. Default is true
+	sdk.setAutoShowLoginDialog(boolean autoShow);
+```
+<br/>
+```java
 	//show login dialog manually
 	sdk.showLogin();
 ```

@@ -61,7 +61,10 @@ https://www.youtube.com/watch?v=lup6Ni9Memk
 <br/><br/>
 [![AppotaGameSDK](http://img.youtube.com/vi/lup6Ni9Memk/0.jpg)](https://www.youtube.com/watch?v=lup6Ni9Memk)
 <br/>
+Or watch on youku:
 <br/>
+http://v.youku.com/v_show/id_XOTA1OTY3Mjg0.html
+<br/><br/>
 # II. Configure SDK**
 
 **Configuration \<AndroidMainfest.xml\>**
